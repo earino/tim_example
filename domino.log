@@ -529,3 +529,437 @@ FileUpdate(. File .dominoignore up to date.,None)
 2016-01-13 11:54:37,842 PST DEBUG FileStructureRepo - Push to origin complete: local/master = Some(AnyObjectId[159de6b8f3c58838f5f8975fa4fbfcef8adbe5aa]), origin/master = Some(AnyObjectId[159de6b8f3c58838f5f8975fa4fbfcef8adbe5aa]).
 2016-01-13 11:54:37,842 PST DEBUG FileStructureRepoSynchronizer - Upload complete.  Success = true
 2016-01-13 11:54:37,842 PST DEBUG FileSyncClient - Upload complete. Success = true
+2016-01-13 11:56:37,399 PST  INFO Domino - ================================================================================
+2016-01-13 11:56:37,403 PST  INFO Domino - starting client
+2016-01-13 11:56:37,403 PST DEBUG Domino - CWD = /Users/earino/play/tim_example
+2016-01-13 11:56:37,404 PST  INFO Domino - executing command: run foo.R
+2016-01-13 11:56:37,703 PST  INFO ProjectControllerProxy - getting git host from https://api.dominoup.com/gitRepoUri/earino/tim_example
+2016-01-13 11:56:37,708 PST DEBUG DefaultTransport - Issuing request to https://api.dominoup.com/gitRepoUri/earino/tim_example with proxy detected as DIRECT (full request = Request(GET,<function2>,<function1>,List(),List((X-Domino-Api-Key,0PY3favaLmTACDZbcDzOsOTtoX9CXz4qlfLsqoEGHkvXKu2RUjFylRwgtB8iFAgn)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+2016-01-13 11:56:38,520 PST DEBUG ProjectControllerProxy - response from server: https://git.dominoup.com/projectrepos/5696/5696aace60b2d5c92aa96483.git
+2016-01-13 11:56:38,522 PST  INFO CLIFileSyncClient - checking whether remote (https://git.dominoup.com/projectrepos/5696/5696aace60b2d5c92aa96483.git) needs to be upgraded to match new desired url (https://git.dominoup.com/projectrepos/5696/5696aace60b2d5c92aa96483.git)
+2016-01-13 11:56:38,526 PST  INFO CLIFileSyncClient - Running in cloud mode, so using AnonymousS3BlobStore
+2016-01-13 11:56:38,541 PST  INFO ProjectControllerProxy - getting git host from https://api.dominoup.com/gitRepoUri/earino/tim_example
+2016-01-13 11:56:38,542 PST DEBUG DefaultTransport - Issuing request to https://api.dominoup.com/gitRepoUri/earino/tim_example with proxy detected as DIRECT (full request = Request(GET,<function2>,<function1>,List(),List((X-Domino-Api-Key,0PY3favaLmTACDZbcDzOsOTtoX9CXz4qlfLsqoEGHkvXKu2RUjFylRwgtB8iFAgn)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+2016-01-13 11:56:38,577 PST DEBUG ProjectControllerProxy - response from server: https://git.dominoup.com/projectrepos/5696/5696aace60b2d5c92aa96483.git
+2016-01-13 11:56:38,577 PST  INFO CLIFileSyncClient - checking whether remote (https://git.dominoup.com/projectrepos/5696/5696aace60b2d5c92aa96483.git) needs to be upgraded to match new desired url (https://git.dominoup.com/projectrepos/5696/5696aace60b2d5c92aa96483.git)
+2016-01-13 11:56:38,578 PST  INFO CLIFileSyncClient - Running in cloud mode, so using AnonymousS3BlobStore
+2016-01-13 11:56:38,602 PST TRACE FileSyncClient - Starting upload...
+2016-01-13 11:56:38,703 PST TRACE FileStructureRepo - Staging structure. Current branch = master, head commit ID = Some(AnyObjectId[159de6b8f3c58838f5f8975fa4fbfcef8adbe5aa]).
+2016-01-13 11:56:38,790 PST DEBUG FileStructureRepo - Staging structure complete. Head advanced to commit ID = Some(AnyObjectId[82c4169051559f358d70fbafb2651621760379ef]).
+2016-01-13 11:56:38,793 PST TRACE FileStructureRepoSynchronizer - Upload starting...
+2016-01-13 11:56:38,796 PST TRACE FileStructureRepoSynchronizer - Asserting repo is safe to operate.  repo state = SAFE, isClean = true, isSafe = true, currentBranch = master.
+2016-01-13 11:56:38,801 PST DEBUG FileStructureRepoSynchronizer - Local paths:
+	domino.workspace.RData -> FileSignature(1452714789000,819,Sha1(f1856081cddf9fa90253623625c9c01c6d558d45))
+	domino.last.dump.rda -> FileSignature(1452714789000,272,Sha1(45134ec97cd1fa4530e97ccff0405028ce458ebb))
+	results/stdout.txt -> FileSignature(1452714789000,976,Sha1(5c3618e918c9dd385a5d9f03a24b95278e4a8eb6))
+	.dominoignore -> FileSignature(1448101570000,287,Sha1(a5f5eb83114b9b51af35b87c00dace198c7db58b))
+	foo.R -> FileSignature(1452714984000,57,Sha1(cada7b7bc025afe4a260922d7101af7aa904b2bb))
+2016-01-13 11:56:38,802 PST TRACE FileStructureRepo - Starting fetch: master = Some(AnyObjectId[82c4169051559f358d70fbafb2651621760379ef]), refs/remotes/origin/master = Some(AnyObjectId[159de6b8f3c58838f5f8975fa4fbfcef8adbe5aa]).
+2016-01-13 11:56:39,511 PST TRACE FileStructureRepo - Fetch complete: master = Some(AnyObjectId[82c4169051559f358d70fbafb2651621760379ef]), refs/remotes/origin/master = Some(AnyObjectId[159de6b8f3c58838f5f8975fa4fbfcef8adbe5aa]).
+2016-01-13 11:56:39,512 PST TRACE FileStructureRepo - Fetch result = [No Update]
+2016-01-13 11:56:39,514 PST DEBUG FileStructureRepo - Computing diffs between base = refs/remotes/origin/master (159de6b8f3c58838f5f8975fa4fbfcef8adbe5aa) and target = HEAD (82c4169051559f358d70fbafb2651621760379ef).
+2016-01-13 11:56:39,517 PST DEBUG FileStructureRepo - Updates:
+	. File domino.workspace.RData up to date.
+	x Modifying file foo.R
+	. File .dominoignore up to date.
+	. File domino.last.dump.rda up to date.
+	. File results/stdout.txt up to date.
+2016-01-13 11:56:39,518 PST TRACE FileStructureRepoSynchronizer - Upload before push starting
+2016-01-13 11:56:39,665 PST DEBUG DefaultTransport - Issuing request to https://api.dominoup.com/blobs/signedPutUrl/cada7b7bc025afe4a260922d7101af7aa904b2bb/57?x=true with proxy detected as DIRECT (full request = Request(POST,<function2>,<function1>,List(),List((X-Domino-Api-Key,0PY3favaLmTACDZbcDzOsOTtoX9CXz4qlfLsqoEGHkvXKu2RUjFylRwgtB8iFAgn), (content-type,application/x-www-form-urlencoded)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+2016-01-13 11:56:39,722 PST  INFO AnonymousS3SingleProjectBlobStore - Generated signed PUT url: https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com/cada7b7bc025afe4a260922d7101af7aa904b2bb?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1452715099&Signature=%2F3tXOgXm%2FHw3rZ%2BXCnqbwO6DEio%3D
+2016-01-13 11:56:39,725 PST  INFO AnonymousS3SingleProjectBlobStore - Starting signed PUT request
+2016-01-13 11:56:39,745 PST DEBUG Jets3tProperties - s3service.https-only=true
+2016-01-13 11:56:39,745 PST DEBUG Jets3tProperties - storage-service.internal-error-retry-max=5
+2016-01-13 11:56:39,745 PST DEBUG Jets3tProperties - storage-service.apply-recommended-dns-caching-defaults=true
+2016-01-13 11:56:39,745 PST DEBUG StorageService - Setting recommended DNS caching defaults
+2016-01-13 11:56:39,745 PST DEBUG StorageService - Using DNS caching system settings: networkaddress.cache.ttl=300, networkaddress.cache.negative.ttl=1
+2016-01-13 11:56:39,750 PST DEBUG Jets3tProperties - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+2016-01-13 11:56:39,750 PST DEBUG Jets3tProperties - httpclient.connection-timeout-ms=60000
+2016-01-13 11:56:39,750 PST DEBUG Jets3tProperties - httpclient.socket-timeout-ms=60000
+2016-01-13 11:56:39,750 PST DEBUG Jets3tProperties - httpclient.stale-checking-enabled=true
+2016-01-13 11:56:39,750 PST DEBUG Jets3tProperties - httpclient.useragent=null
+2016-01-13 11:56:39,753 PST DEBUG RestUtils - Setting user agent string: JetS3t/0.9.4 (Mac OS X/10.9.5; x86_64; en; JVM 1.8.0_05)
+2016-01-13 11:56:39,753 PST DEBUG Jets3tProperties - http.protocol.expect-continue=true
+2016-01-13 11:56:39,753 PST DEBUG Jets3tProperties - httpclient.connection-manager-timeout=0
+2016-01-13 11:56:39,760 PST DEBUG Jets3tProperties - httpclient.retry-max=5
+2016-01-13 11:56:39,760 PST DEBUG Jets3tProperties - httpclient.proxy-autodetect=true
+2016-01-13 11:56:39,760 PST DEBUG Jets3tProperties - s3service.s3-endpoint=s3.amazonaws.com
+2016-01-13 11:56:39,762 PST DEBUG PluginProxyUtil - About to attempt auto proxy detection under Java version:1.8.0_05-b13
+2016-01-13 11:56:39,762 PST DEBUG PluginProxyUtil - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+2016-01-13 11:56:39,762 PST DEBUG PluginProxyUtil - Using failover proxy detection...
+2016-01-13 11:56:39,762 PST DEBUG PluginProxyUtil - Plugin Proxy Config List Property:null
+2016-01-13 11:56:39,762 PST DEBUG PluginProxyUtil - No configured plugin proxy list
+2016-01-13 11:56:39,762 PST DEBUG Jets3tProperties - s3service.default-storage-class=null
+2016-01-13 11:56:39,762 PST DEBUG Jets3tProperties - s3service.server-side-encryption=null
+2016-01-13 11:56:39,763 PST DEBUG Jets3tProperties - devpay.user-token=null
+2016-01-13 11:56:39,763 PST DEBUG Jets3tProperties - devpay.product-token=null
+2016-01-13 11:56:39,763 PST DEBUG Jets3tProperties - httpclient.requester-pays-buckets-enabled=false
+2016-01-13 11:56:39,765 PST DEBUG Jets3tProperties - storage-service.disable-live-md5=false
+2016-01-13 11:56:39,765 PST DEBUG Jets3tProperties - s3service.s3-endpoint=s3.amazonaws.com
+2016-01-13 11:56:39,766 PST DEBUG RepeatableRequestEntity - Setting maximal read-ahead mark limit for markable input stream com.cerebro.domino.common.sync.ConsoleProgressMonitoredInputStream assuming it doesn't use in-memory storage: 77
+2016-01-13 11:56:39,766 PST DEBUG RepeatableRequestEntity - Setting maximal read-ahead mark limit for markable input stream java.io.ByteArrayInputStream assuming it doesn't use in-memory storage: 77
+2016-01-13 11:56:39,766 PST DEBUG Jets3tProperties - httpclient.read-throttle=0
+2016-01-13 11:56:39,766 PST DEBUG RestStorageService - Performing PUT request for 'https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com/cada7b7bc025afe4a260922d7101af7aa904b2bb?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1452715099&Signature=%2F3tXOgXm%2FHw3rZ%2BXCnqbwO6DEio%3D', expecting response codes: [200]
+2016-01-13 11:56:39,768 PST DEBUG RestStorageService - Headers: [Content-Encoding: gzip, x-amz-meta-domino-original-blob-length: 57, x-amz-server-side-encryption: AES256, Content-Type: application/x-gzip]
+2016-01-13 11:56:39,768 PST DEBUG Jets3tProperties - httpclient.retry-max=5
+2016-01-13 11:56:39,768 PST DEBUG RestStorageService - Service has no Credential and is un-authenticated, skipping authorization
+2016-01-13 11:56:39,784 PST DEBUG Jets3tProperties - httpclient.max-connections=20
+2016-01-13 11:56:39,784 PST DEBUG Jets3tProperties - httpclient.max-connections-per-host=0
+2016-01-13 11:56:39,785 PST DEBUG Jets3tProperties - httpclient.connection.ttl=-1
+2016-01-13 11:56:39,815 PST DEBUG RestUtils$ThreadSafeConnManager - Get connection: {s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443, timeout = 0
+2016-01-13 11:56:39,816 PST DEBUG ConnPoolByRoute - [{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443] total kept alive: 0, total issued: 0, total allocated: 0 out of 20
+2016-01-13 11:56:39,816 PST DEBUG ConnPoolByRoute - No free connections [{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443][null]
+2016-01-13 11:56:39,816 PST DEBUG ConnPoolByRoute - Available capacity: 20 out of 20 [{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443][null]
+2016-01-13 11:56:39,816 PST DEBUG ConnPoolByRoute - Creating new connection [{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443]
+2016-01-13 11:56:40,246 PST DEBUG DefaultClientConnectionOperator - Connecting to com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443
+2016-01-13 11:56:40,425 PST DEBUG RequestAddCookies - CookieSpec selected: default
+2016-01-13 11:56:40,425 PST DEBUG RequestAuthCache - Auth cache not set in the context
+2016-01-13 11:56:40,425 PST DEBUG RequestTargetAuthentication - Target auth state: UNCHALLENGED
+2016-01-13 11:56:40,426 PST DEBUG RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+2016-01-13 11:56:40,426 PST DEBUG DefaultHttpClient - Attempt 1 to execute request
+2016-01-13 11:56:40,426 PST DEBUG DefaultClientConnection - Sending request: PUT /cada7b7bc025afe4a260922d7101af7aa904b2bb?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1452715099&Signature=%2F3tXOgXm%2FHw3rZ%2BXCnqbwO6DEio%3D HTTP/1.1
+2016-01-13 11:56:40,426 PST DEBUG headers - >> PUT /cada7b7bc025afe4a260922d7101af7aa904b2bb?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1452715099&Signature=%2F3tXOgXm%2FHw3rZ%2BXCnqbwO6DEio%3D HTTP/1.1
+2016-01-13 11:56:40,426 PST DEBUG headers - >> Content-Encoding: gzip
+2016-01-13 11:56:40,426 PST DEBUG headers - >> x-amz-meta-domino-original-blob-length: 57
+2016-01-13 11:56:40,428 PST DEBUG headers - >> x-amz-server-side-encryption: AES256
+2016-01-13 11:56:40,428 PST DEBUG headers - >> Content-Type: application/x-gzip
+2016-01-13 11:56:40,428 PST DEBUG headers - >> Content-Length: 77
+2016-01-13 11:56:40,428 PST DEBUG headers - >> Host: com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com
+2016-01-13 11:56:40,428 PST DEBUG headers - >> Connection: Keep-Alive
+2016-01-13 11:56:40,428 PST DEBUG headers - >> User-Agent: JetS3t/0.9.4 (Mac OS X/10.9.5; x86_64; en; JVM 1.8.0_05)
+2016-01-13 11:56:40,428 PST DEBUG headers - >> Expect: 100-continue
+2016-01-13 11:56:40,476 PST DEBUG DefaultClientConnection - Receiving response: HTTP/1.1 100 Continue
+2016-01-13 11:56:40,476 PST DEBUG headers - << HTTP/1.1 100 Continue
+2016-01-13 11:56:40,486 PST DEBUG RepeatableRequestEntity - MD5 digest of data sent for 'cada7b7bc025afe4a260922d7101af7aa904b2bb' - B64:yBCAGXw1ymfkR/Y36/OSpw== Hex:c81080197c35ca67e447f637ebf392a7
+2016-01-13 11:56:40,524 PST DEBUG DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+2016-01-13 11:56:40,524 PST DEBUG headers - << HTTP/1.1 200 OK
+2016-01-13 11:56:40,524 PST DEBUG headers - << x-amz-id-2: MkyOLA4Ko/9GmK+Ps7MyfYkR+BmXSD+he277kmIovF04cMuTiH/7XWojvm7IO8xrrhWW3mYczHc=
+2016-01-13 11:56:40,524 PST DEBUG headers - << x-amz-request-id: 525AAFEA73C0DBDF
+2016-01-13 11:56:40,524 PST DEBUG headers - << Date: Wed, 13 Jan 2016 19:56:41 GMT
+2016-01-13 11:56:40,524 PST DEBUG headers - << x-amz-server-side-encryption: AES256
+2016-01-13 11:56:40,524 PST DEBUG headers - << ETag: "c81080197c35ca67e447f637ebf392a7"
+2016-01-13 11:56:40,525 PST DEBUG headers - << Content-Length: 0
+2016-01-13 11:56:40,525 PST DEBUG headers - << Server: AmazonS3
+2016-01-13 11:56:40,527 PST DEBUG DefaultHttpClient - Connection can be kept alive indefinitely
+2016-01-13 11:56:40,534 PST DEBUG RestStorageService - Response for 'PUT'. Content-Type: , Headers: [x-amz-id-2: MkyOLA4Ko/9GmK+Ps7MyfYkR+BmXSD+he277kmIovF04cMuTiH/7XWojvm7IO8xrrhWW3mYczHc=, x-amz-request-id: 525AAFEA73C0DBDF, Date: Wed, 13 Jan 2016 19:56:41 GMT, x-amz-server-side-encryption: AES256, ETag: "c81080197c35ca67e447f637ebf392a7", Content-Length: 0, Server: AmazonS3]
+2016-01-13 11:56:40,534 PST DEBUG RestStorageService - Response entity: org.apache.http.conn.BasicManagedEntity@5524797
+2016-01-13 11:56:40,534 PST DEBUG RestStorageService - Entity length: 0
+2016-01-13 11:56:40,534 PST DEBUG RestStorageService - Received response code 200; matches one of expected set ([200])? true
+2016-01-13 11:56:40,535 PST DEBUG RestUtils$ThreadSafeConnManager - Released connection is reusable.
+2016-01-13 11:56:40,535 PST DEBUG ConnPoolByRoute - Releasing connection [{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443][null]
+2016-01-13 11:56:40,535 PST DEBUG ConnPoolByRoute - Pooling connection [{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443][null]; keep alive indefinitely
+2016-01-13 11:56:40,535 PST DEBUG ConnPoolByRoute - Notifying no-one, there are no waiting threads
+2016-01-13 11:56:40,535 PST DEBUG ServiceUtils - Processing REST metadata items
+2016-01-13 11:56:40,535 PST DEBUG ServiceUtils - Ignoring metadata item: Server=AmazonS3
+2016-01-13 11:56:40,535 PST DEBUG ServiceUtils - Leaving header item unchanged: ETag="c81080197c35ca67e447f637ebf392a7"
+2016-01-13 11:56:40,535 PST DEBUG ServiceUtils - Removed header prefix x-amz- from key: x-amz-request-id=>request-id
+2016-01-13 11:56:40,535 PST DEBUG ServiceUtils - Removed header prefix x-amz- from key: x-amz-id-2=>id-2
+2016-01-13 11:56:40,536 PST DEBUG ServiceUtils - Removed header prefix x-amz- from key: x-amz-server-side-encryption=>server-side-encryption
+2016-01-13 11:56:40,536 PST DEBUG ServiceUtils - Leaving HTTP header item unchanged: Content-Length=0
+2016-01-13 11:56:40,536 PST DEBUG ServiceUtils - Parsing date string 'Wed, 13 Jan 2016 19:56:41 GMT' into Date object for key: Date
+2016-01-13 11:56:40,537 PST DEBUG ServiceUtils - Leaving header item unchanged: Date=Wed Jan 13 11:56:41 PST 2016
+2016-01-13 11:56:40,537 PST DEBUG RestStorageService - Object upload was automatically verified, the calculated MD5 hash value matched the ETag returned by S3: cada7b7bc025afe4a260922d7101af7aa904b2bb
+2016-01-13 11:56:40,540 PST TRACE FileStructureRepoSynchronizer - Upload before push complete
+2016-01-13 11:56:40,541 PST TRACE FileStructureRepo - Starting push to origin: local/master = Some(AnyObjectId[82c4169051559f358d70fbafb2651621760379ef]), origin/master = Some(AnyObjectId[159de6b8f3c58838f5f8975fa4fbfcef8adbe5aa]).
+2016-01-13 11:56:40,998 PST DEBUG FileStructureRepo - Push result: [RemoteRefUpdate[remoteName=refs/heads/master, OK, (null)...82c4169051559f358d70fbafb2651621760379ef, fastForward, srcRef=refs/heads/master, message=null]]
+2016-01-13 11:56:41,002 PST DEBUG FileStructureRepo - Push to origin complete: local/master = Some(AnyObjectId[82c4169051559f358d70fbafb2651621760379ef]), origin/master = Some(AnyObjectId[82c4169051559f358d70fbafb2651621760379ef]).
+2016-01-13 11:56:41,003 PST DEBUG FileStructureRepoSynchronizer - Upload complete.  Success = true
+2016-01-13 11:56:41,004 PST DEBUG FileSyncClient - Upload complete. Success = true
+2016-01-13 11:56:41,021 PST  INFO RunsControllerProxy - Starting run with input data at rev Some(AnyObjectId[82c4169051559f358d70fbafb2651621760379ef])
+2016-01-13 11:56:41,028 PST DEBUG DefaultTransport - POST https://api.dominoup.com/v1/projects/earino/tim_example/runs body = (json) {"command":["foo.R"],"isDirect":false,"commitId":"82c4169051559f358d70fbafb2651621760379ef","title":null,"tier":null,"publishApiEndpoint":false}
+2016-01-13 11:56:41,028 PST DEBUG DefaultTransport - Issuing request to https://api.dominoup.com/v1/projects/earino/tim_example/runs with proxy detected as DIRECT (full request = Request(POST,<function2>,<function1>,List(),List((X-Domino-Api-Key,0PY3favaLmTACDZbcDzOsOTtoX9CXz4qlfLsqoEGHkvXKu2RUjFylRwgtB8iFAgn), (Content-Type,application/json)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+2016-01-13 11:57:02,047 PST  INFO Domino - ================================================================================
+2016-01-13 11:57:02,050 PST  INFO Domino - starting client
+2016-01-13 11:57:02,051 PST DEBUG Domino - CWD = /Users/earino/play/tim_example
+2016-01-13 11:57:02,052 PST  INFO Domino - executing command: sync
+2016-01-13 11:57:02,355 PST  INFO ProjectControllerProxy - getting git host from https://api.dominoup.com/gitRepoUri/earino/tim_example
+2016-01-13 11:57:02,361 PST DEBUG DefaultTransport - Issuing request to https://api.dominoup.com/gitRepoUri/earino/tim_example with proxy detected as DIRECT (full request = Request(GET,<function2>,<function1>,List(),List((X-Domino-Api-Key,0PY3favaLmTACDZbcDzOsOTtoX9CXz4qlfLsqoEGHkvXKu2RUjFylRwgtB8iFAgn)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+2016-01-13 11:57:03,196 PST DEBUG ProjectControllerProxy - response from server: https://git.dominoup.com/projectrepos/5696/5696aace60b2d5c92aa96483.git
+2016-01-13 11:57:03,198 PST  INFO CLIFileSyncClient - checking whether remote (https://git.dominoup.com/projectrepos/5696/5696aace60b2d5c92aa96483.git) needs to be upgraded to match new desired url (https://git.dominoup.com/projectrepos/5696/5696aace60b2d5c92aa96483.git)
+2016-01-13 11:57:03,203 PST  INFO CLIFileSyncClient - Running in cloud mode, so using AnonymousS3BlobStore
+2016-01-13 11:57:03,231 PST TRACE FileSyncClient - Starting upload...
+2016-01-13 11:57:03,331 PST TRACE FileStructureRepo - Staging structure. Current branch = master, head commit ID = Some(AnyObjectId[82c4169051559f358d70fbafb2651621760379ef]).
+2016-01-13 11:57:03,384 PST DEBUG FileStructureRepo - Staging structure complete. Head advanced to commit ID = Some(AnyObjectId[82c4169051559f358d70fbafb2651621760379ef]).
+2016-01-13 11:57:03,387 PST TRACE FileStructureRepoSynchronizer - Upload starting...
+2016-01-13 11:57:03,393 PST TRACE FileStructureRepoSynchronizer - Asserting repo is safe to operate.  repo state = SAFE, isClean = true, isSafe = true, currentBranch = master.
+2016-01-13 11:57:03,398 PST DEBUG FileStructureRepoSynchronizer - Local paths:
+	domino.workspace.RData -> FileSignature(1452714789000,819,Sha1(f1856081cddf9fa90253623625c9c01c6d558d45))
+	domino.last.dump.rda -> FileSignature(1452714789000,272,Sha1(45134ec97cd1fa4530e97ccff0405028ce458ebb))
+	results/stdout.txt -> FileSignature(1452714789000,976,Sha1(5c3618e918c9dd385a5d9f03a24b95278e4a8eb6))
+	.dominoignore -> FileSignature(1448101570000,287,Sha1(a5f5eb83114b9b51af35b87c00dace198c7db58b))
+	foo.R -> FileSignature(1452714984000,57,Sha1(cada7b7bc025afe4a260922d7101af7aa904b2bb))
+2016-01-13 11:57:03,400 PST TRACE FileStructureRepo - Starting fetch: master = Some(AnyObjectId[82c4169051559f358d70fbafb2651621760379ef]), refs/remotes/origin/master = Some(AnyObjectId[82c4169051559f358d70fbafb2651621760379ef]).
+2016-01-13 11:57:04,298 PST TRACE FileStructureRepo - Fetch complete: master = Some(AnyObjectId[82c4169051559f358d70fbafb2651621760379ef]), refs/remotes/origin/master = Some(AnyObjectId[c70df24b6db35121c6b04afd45d6f543d7e2d76e]).
+2016-01-13 11:57:04,300 PST TRACE FileStructureRepo - Fetch result = TrackingRefUpdate[refs/heads/master -> refs/remotes/origin/master (forced) 82c4169..c70df24]
+2016-01-13 11:57:04,301 PST DEBUG FileStructureRepoSynchronizer - Upload complete.  Success = false
+2016-01-13 11:57:04,301 PST DEBUG FileSyncClient - Upload complete. Success = false
+2016-01-13 11:57:04,305 PST  INFO ProjectControllerProxy - getting git host from https://api.dominoup.com/gitRepoUri/earino/tim_example
+2016-01-13 11:57:04,305 PST DEBUG DefaultTransport - Issuing request to https://api.dominoup.com/gitRepoUri/earino/tim_example with proxy detected as DIRECT (full request = Request(GET,<function2>,<function1>,List(),List((X-Domino-Api-Key,0PY3favaLmTACDZbcDzOsOTtoX9CXz4qlfLsqoEGHkvXKu2RUjFylRwgtB8iFAgn)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+2016-01-13 11:57:04,343 PST DEBUG ProjectControllerProxy - response from server: https://git.dominoup.com/projectrepos/5696/5696aace60b2d5c92aa96483.git
+2016-01-13 11:57:04,343 PST  INFO CLIFileSyncClient - checking whether remote (https://git.dominoup.com/projectrepos/5696/5696aace60b2d5c92aa96483.git) needs to be upgraded to match new desired url (https://git.dominoup.com/projectrepos/5696/5696aace60b2d5c92aa96483.git)
+2016-01-13 11:57:04,344 PST  INFO CLIFileSyncClient - Running in cloud mode, so using AnonymousS3BlobStore
+2016-01-13 11:57:04,346 PST TRACE FileSyncClient - Starting download...
+2016-01-13 11:57:04,359 PST TRACE FileStructureRepo - Staging structure. Current branch = master, head commit ID = Some(AnyObjectId[82c4169051559f358d70fbafb2651621760379ef]).
+2016-01-13 11:57:04,364 PST DEBUG FileStructureRepo - Staging structure complete. Head advanced to commit ID = Some(AnyObjectId[82c4169051559f358d70fbafb2651621760379ef]).
+2016-01-13 11:57:04,365 PST TRACE FileStructureRepoSynchronizer - Starting download...
+2016-01-13 11:57:04,367 PST TRACE FileStructureRepoSynchronizer - Asserting repo is safe to operate.  repo state = SAFE, isClean = true, isSafe = true, currentBranch = master.
+2016-01-13 11:57:04,368 PST TRACE FileStructureRepo - Starting fetch: master = Some(AnyObjectId[82c4169051559f358d70fbafb2651621760379ef]), refs/remotes/origin/master = Some(AnyObjectId[c70df24b6db35121c6b04afd45d6f543d7e2d76e]).
+2016-01-13 11:57:04,592 PST TRACE FileStructureRepo - Fetch complete: master = Some(AnyObjectId[82c4169051559f358d70fbafb2651621760379ef]), refs/remotes/origin/master = Some(AnyObjectId[c70df24b6db35121c6b04afd45d6f543d7e2d76e]).
+2016-01-13 11:57:04,592 PST TRACE FileStructureRepo - Fetch result = [No Update]
+2016-01-13 11:57:04,594 PST TRACE FileStructureRepo - Finding shared ancestor between commit 82c4169051559f358d70fbafb2651621760379ef 1452714998 -----p and commit c70df24b6db35121c6b04afd45d6f543d7e2d76e 1452715006 -----p
+2016-01-13 11:57:04,597 PST DEBUG FileStructureRepo - Ancestors of Commit B, up until ancestors of A:
+commit c70df24b6db35121c6b04afd45d6f543d7e2d76e 1452715006 ----sp
+2016-01-13 11:57:04,599 PST DEBUG FileStructureRepo - Shared ancestor computed as commit 82c4169051559f358d70fbafb2651621760379ef 1452714998 ---usp
+2016-01-13 11:57:04,600 PST DEBUG FileStructureRepo - BranchState between master and refs/remotes/origin/master with currentHeadCommitId=AnyObjectId[82c4169051559f358d70fbafb2651621760379ef], sharedAncestorId=commit 82c4169051559f358d70fbafb2651621760379ef 1452714998 ---usp, serverTipCommitId=AnyObjectId[c70df24b6db35121c6b04afd45d6f543d7e2d76e] is BranchState(AnyObjectId[82c4169051559f358d70fbafb2651621760379ef],commit 82c4169051559f358d70fbafb2651621760379ef 1452714998 ---usp,AnyObjectId[c70df24b6db35121c6b04afd45d6f543d7e2d76e]).
+2016-01-13 11:57:04,601 PST TRACE FileStructureRepoSynchronizer - Integrating fetch changes into local...
+2016-01-13 11:57:04,602 PST TRACE FileStructureRepo - Starting fast-forward: master = Some(AnyObjectId[82c4169051559f358d70fbafb2651621760379ef]), origin/master = Some(AnyObjectId[c70df24b6db35121c6b04afd45d6f543d7e2d76e]).
+2016-01-13 11:57:04,620 PST DEBUG FileStructureRepo - Merge result = Merge of revisions 82c4169051559f358d70fbafb2651621760379ef, c70df24b6db35121c6b04afd45d6f543d7e2d76e with base c70df24b6db35121c6b04afd45d6f543d7e2d76e using strategy recursive resulted in: Fast-forward. 
+2016-01-13 11:57:04,621 PST TRACE FileStructureRepo - Computing difference from base commit 82c4169051559f358d70fbafb2651621760379ef to target commit c70df24b6db35121c6b04afd45d6f543d7e2d76e.
+2016-01-13 11:57:04,626 PST TRACE FileStructureRepo - Fast-forward diffs: FileUpdate(x Modifying file results/stdout.txt,None);FileUpdate(. File domino.last.dump.rda up to date.,None);FileUpdate(. File .dominoignore up to date.,None);FileUpdate(+ Adding file results/Rplot001.svg,None);FileUpdate(. File domino.workspace.RData up to date.,None);FileUpdate(. File foo.R up to date.,None)
+2016-01-13 11:57:04,627 PST TRACE FileStructureRepo - Fast-forward succeeded.  Num diffs = 6
+2016-01-13 11:57:04,628 PST DEBUG FileStructureRepo - Fast-forward complete: master = Some(AnyObjectId[c70df24b6db35121c6b04afd45d6f543d7e2d76e]), origin/master = Some(AnyObjectId[c70df24b6db35121c6b04afd45d6f543d7e2d76e]).
+2016-01-13 11:57:04,629 PST TRACE FileStructureRepoSynchronizer - Integrating changes complete.
+2016-01-13 11:57:04,630 PST TRACE FileStructureRepoSynchronizer - Download updates: FileUpdate(x Modifying file results/stdout.txt,None);FileUpdate(. File domino.last.dump.rda up to date.,None);FileUpdate(. File .dominoignore up to date.,None);FileUpdate(+ Adding file results/Rplot001.svg,None);FileUpdate(. File domino.workspace.RData up to date.,None);FileUpdate(. File foo.R up to date.,None)
+2016-01-13 11:57:04,631 PST DEBUG FileStructureRepoSynchronizer - Download updates size = 6
+2016-01-13 11:57:04,654 PST DEBUG DefaultTransport - Issuing request to https://api.dominoup.com/blobs/signedGetUrl/73d5ee7f8fe31ffdc7818bf7aeedea3faf82bd16 with proxy detected as DIRECT (full request = Request(POST,<function2>,<function1>,List(),List((X-Domino-Api-Key,0PY3favaLmTACDZbcDzOsOTtoX9CXz4qlfLsqoEGHkvXKu2RUjFylRwgtB8iFAgn), (content-type,application/x-www-form-urlencoded)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+2016-01-13 11:57:04,654 PST DEBUG DefaultTransport - Issuing request to https://api.dominoup.com/blobs/signedGetUrl/dfb2fa34890ce1e56f6d30099450e78e11b987f0 with proxy detected as DIRECT (full request = Request(POST,<function2>,<function1>,List(),List((X-Domino-Api-Key,0PY3favaLmTACDZbcDzOsOTtoX9CXz4qlfLsqoEGHkvXKu2RUjFylRwgtB8iFAgn), (content-type,application/x-www-form-urlencoded)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+2016-01-13 11:57:04,694 PST  INFO AnonymousS3SingleProjectBlobStore - Generated signed GET url: https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com/73d5ee7f8fe31ffdc7818bf7aeedea3faf82bd16?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1452715124&Signature=gM5I86fSg9rffb6xb8IZAJyczjA%3D
+2016-01-13 11:57:04,694 PST  INFO AnonymousS3SingleProjectBlobStore - Starting signed GET request
+2016-01-13 11:57:04,722 PST DEBUG Jets3tProperties - s3service.https-only=true
+2016-01-13 11:57:04,722 PST DEBUG Jets3tProperties - storage-service.internal-error-retry-max=5
+2016-01-13 11:57:04,722 PST DEBUG Jets3tProperties - storage-service.apply-recommended-dns-caching-defaults=true
+2016-01-13 11:57:04,722 PST DEBUG StorageService - Setting recommended DNS caching defaults
+2016-01-13 11:57:04,723 PST DEBUG StorageService - Using DNS caching system settings: networkaddress.cache.ttl=300, networkaddress.cache.negative.ttl=1
+2016-01-13 11:57:04,727 PST DEBUG Jets3tProperties - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+2016-01-13 11:57:04,727 PST DEBUG Jets3tProperties - httpclient.connection-timeout-ms=60000
+2016-01-13 11:57:04,727 PST DEBUG Jets3tProperties - httpclient.socket-timeout-ms=60000
+2016-01-13 11:57:04,728 PST DEBUG Jets3tProperties - httpclient.stale-checking-enabled=true
+2016-01-13 11:57:04,728 PST DEBUG Jets3tProperties - httpclient.useragent=null
+2016-01-13 11:57:04,730 PST DEBUG RestUtils - Setting user agent string: JetS3t/0.9.4 (Mac OS X/10.9.5; x86_64; en; JVM 1.8.0_05)
+2016-01-13 11:57:04,730 PST DEBUG Jets3tProperties - http.protocol.expect-continue=true
+2016-01-13 11:57:04,730 PST DEBUG Jets3tProperties - httpclient.connection-manager-timeout=0
+2016-01-13 11:57:04,735 PST DEBUG Jets3tProperties - httpclient.retry-max=5
+2016-01-13 11:57:04,735 PST DEBUG Jets3tProperties - httpclient.proxy-autodetect=true
+2016-01-13 11:57:04,736 PST DEBUG Jets3tProperties - s3service.s3-endpoint=s3.amazonaws.com
+2016-01-13 11:57:04,737 PST DEBUG PluginProxyUtil - About to attempt auto proxy detection under Java version:1.8.0_05-b13
+2016-01-13 11:57:04,737 PST DEBUG PluginProxyUtil - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+2016-01-13 11:57:04,737 PST DEBUG PluginProxyUtil - Using failover proxy detection...
+2016-01-13 11:57:04,737 PST DEBUG PluginProxyUtil - Plugin Proxy Config List Property:null
+2016-01-13 11:57:04,737 PST DEBUG PluginProxyUtil - No configured plugin proxy list
+2016-01-13 11:57:04,737 PST DEBUG Jets3tProperties - s3service.default-storage-class=null
+2016-01-13 11:57:04,737 PST DEBUG Jets3tProperties - s3service.server-side-encryption=null
+2016-01-13 11:57:04,738 PST DEBUG Jets3tProperties - devpay.user-token=null
+2016-01-13 11:57:04,738 PST DEBUG Jets3tProperties - devpay.product-token=null
+2016-01-13 11:57:04,738 PST DEBUG Jets3tProperties - httpclient.requester-pays-buckets-enabled=false
+2016-01-13 11:57:04,738 PST DEBUG Jets3tProperties - s3service.s3-endpoint=s3.amazonaws.com
+2016-01-13 11:57:04,740 PST DEBUG RestStorageService - Performing GET request for 'https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com/73d5ee7f8fe31ffdc7818bf7aeedea3faf82bd16?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1452715124&Signature=gM5I86fSg9rffb6xb8IZAJyczjA%3D', expecting response codes: [200]
+2016-01-13 11:57:04,740 PST DEBUG RestStorageService - Headers: []
+2016-01-13 11:57:04,740 PST DEBUG Jets3tProperties - httpclient.retry-max=5
+2016-01-13 11:57:04,740 PST DEBUG RestStorageService - Service has no Credential and is un-authenticated, skipping authorization
+2016-01-13 11:57:04,754 PST DEBUG Jets3tProperties - httpclient.max-connections=20
+2016-01-13 11:57:04,754 PST DEBUG Jets3tProperties - httpclient.max-connections-per-host=0
+2016-01-13 11:57:04,755 PST DEBUG Jets3tProperties - httpclient.connection.ttl=-1
+2016-01-13 11:57:04,763 PST  INFO AnonymousS3SingleProjectBlobStore - Generated signed GET url: https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com/dfb2fa34890ce1e56f6d30099450e78e11b987f0?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1452715124&Signature=%2Fj7r2rTWKzMVEZChkuc4WvNnev8%3D
+2016-01-13 11:57:04,763 PST  INFO AnonymousS3SingleProjectBlobStore - Starting signed GET request
+2016-01-13 11:57:04,763 PST DEBUG Jets3tProperties - s3service.https-only=true
+2016-01-13 11:57:04,764 PST DEBUG Jets3tProperties - storage-service.internal-error-retry-max=5
+2016-01-13 11:57:04,764 PST DEBUG Jets3tProperties - storage-service.apply-recommended-dns-caching-defaults=true
+2016-01-13 11:57:04,764 PST DEBUG StorageService - Setting recommended DNS caching defaults
+2016-01-13 11:57:04,764 PST DEBUG StorageService - Using DNS caching system settings: networkaddress.cache.ttl=300, networkaddress.cache.negative.ttl=1
+2016-01-13 11:57:04,764 PST DEBUG Jets3tProperties - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+2016-01-13 11:57:04,764 PST DEBUG Jets3tProperties - httpclient.connection-timeout-ms=60000
+2016-01-13 11:57:04,764 PST DEBUG Jets3tProperties - httpclient.socket-timeout-ms=60000
+2016-01-13 11:57:04,764 PST DEBUG Jets3tProperties - httpclient.stale-checking-enabled=true
+2016-01-13 11:57:04,764 PST DEBUG Jets3tProperties - httpclient.useragent=null
+2016-01-13 11:57:04,764 PST DEBUG RestUtils - Setting user agent string: JetS3t/0.9.4 (Mac OS X/10.9.5; x86_64; en; JVM 1.8.0_05)
+2016-01-13 11:57:04,764 PST DEBUG Jets3tProperties - http.protocol.expect-continue=true
+2016-01-13 11:57:04,764 PST DEBUG Jets3tProperties - httpclient.connection-manager-timeout=0
+2016-01-13 11:57:04,764 PST DEBUG Jets3tProperties - httpclient.retry-max=5
+2016-01-13 11:57:04,764 PST DEBUG Jets3tProperties - httpclient.proxy-autodetect=true
+2016-01-13 11:57:04,764 PST DEBUG Jets3tProperties - s3service.s3-endpoint=s3.amazonaws.com
+2016-01-13 11:57:04,764 PST DEBUG PluginProxyUtil - About to attempt auto proxy detection under Java version:1.8.0_05-b13
+2016-01-13 11:57:04,764 PST DEBUG PluginProxyUtil - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+2016-01-13 11:57:04,764 PST DEBUG PluginProxyUtil - Using failover proxy detection...
+2016-01-13 11:57:04,764 PST DEBUG PluginProxyUtil - Plugin Proxy Config List Property:null
+2016-01-13 11:57:04,765 PST DEBUG PluginProxyUtil - No configured plugin proxy list
+2016-01-13 11:57:04,765 PST DEBUG Jets3tProperties - s3service.default-storage-class=null
+2016-01-13 11:57:04,765 PST DEBUG Jets3tProperties - s3service.server-side-encryption=null
+2016-01-13 11:57:04,765 PST DEBUG Jets3tProperties - devpay.user-token=null
+2016-01-13 11:57:04,765 PST DEBUG Jets3tProperties - devpay.product-token=null
+2016-01-13 11:57:04,765 PST DEBUG Jets3tProperties - httpclient.requester-pays-buckets-enabled=false
+2016-01-13 11:57:04,765 PST DEBUG Jets3tProperties - s3service.s3-endpoint=s3.amazonaws.com
+2016-01-13 11:57:04,765 PST DEBUG RestStorageService - Performing GET request for 'https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com/dfb2fa34890ce1e56f6d30099450e78e11b987f0?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1452715124&Signature=%2Fj7r2rTWKzMVEZChkuc4WvNnev8%3D', expecting response codes: [200]
+2016-01-13 11:57:04,765 PST DEBUG RestStorageService - Headers: []
+2016-01-13 11:57:04,765 PST DEBUG Jets3tProperties - httpclient.retry-max=5
+2016-01-13 11:57:04,765 PST DEBUG RestStorageService - Service has no Credential and is un-authenticated, skipping authorization
+2016-01-13 11:57:04,767 PST DEBUG Jets3tProperties - httpclient.max-connections=20
+2016-01-13 11:57:04,768 PST DEBUG Jets3tProperties - httpclient.max-connections-per-host=0
+2016-01-13 11:57:04,768 PST DEBUG Jets3tProperties - httpclient.connection.ttl=-1
+2016-01-13 11:57:04,788 PST DEBUG RestUtils$ThreadSafeConnManager - Get connection: {s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443, timeout = 0
+2016-01-13 11:57:04,788 PST DEBUG RestUtils$ThreadSafeConnManager - Get connection: {s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443, timeout = 0
+2016-01-13 11:57:04,789 PST DEBUG ConnPoolByRoute - [{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443] total kept alive: 0, total issued: 0, total allocated: 0 out of 20
+2016-01-13 11:57:04,789 PST DEBUG ConnPoolByRoute - [{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443] total kept alive: 0, total issued: 0, total allocated: 0 out of 20
+2016-01-13 11:57:04,789 PST DEBUG ConnPoolByRoute - No free connections [{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443][null]
+2016-01-13 11:57:04,789 PST DEBUG ConnPoolByRoute - No free connections [{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443][null]
+2016-01-13 11:57:04,789 PST DEBUG ConnPoolByRoute - Available capacity: 20 out of 20 [{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443][null]
+2016-01-13 11:57:04,789 PST DEBUG ConnPoolByRoute - Available capacity: 20 out of 20 [{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443][null]
+2016-01-13 11:57:04,789 PST DEBUG ConnPoolByRoute - Creating new connection [{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443]
+2016-01-13 11:57:04,789 PST DEBUG ConnPoolByRoute - Creating new connection [{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443]
+2016-01-13 11:57:05,212 PST DEBUG DefaultClientConnectionOperator - Connecting to com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443
+2016-01-13 11:57:05,212 PST DEBUG DefaultClientConnectionOperator - Connecting to com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443
+2016-01-13 11:57:05,390 PST DEBUG RequestAddCookies - CookieSpec selected: default
+2016-01-13 11:57:05,390 PST DEBUG RequestAddCookies - CookieSpec selected: default
+2016-01-13 11:57:05,391 PST DEBUG RequestAuthCache - Auth cache not set in the context
+2016-01-13 11:57:05,391 PST DEBUG RequestAuthCache - Auth cache not set in the context
+2016-01-13 11:57:05,391 PST DEBUG RequestTargetAuthentication - Target auth state: UNCHALLENGED
+2016-01-13 11:57:05,391 PST DEBUG RequestTargetAuthentication - Target auth state: UNCHALLENGED
+2016-01-13 11:57:05,392 PST DEBUG RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+2016-01-13 11:57:05,392 PST DEBUG RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+2016-01-13 11:57:05,392 PST DEBUG DefaultHttpClient - Attempt 1 to execute request
+2016-01-13 11:57:05,392 PST DEBUG DefaultHttpClient - Attempt 1 to execute request
+2016-01-13 11:57:05,392 PST DEBUG DefaultClientConnection - Sending request: GET /73d5ee7f8fe31ffdc7818bf7aeedea3faf82bd16?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1452715124&Signature=gM5I86fSg9rffb6xb8IZAJyczjA%3D HTTP/1.1
+2016-01-13 11:57:05,392 PST DEBUG DefaultClientConnection - Sending request: GET /dfb2fa34890ce1e56f6d30099450e78e11b987f0?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1452715124&Signature=%2Fj7r2rTWKzMVEZChkuc4WvNnev8%3D HTTP/1.1
+2016-01-13 11:57:05,393 PST DEBUG headers - >> GET /dfb2fa34890ce1e56f6d30099450e78e11b987f0?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1452715124&Signature=%2Fj7r2rTWKzMVEZChkuc4WvNnev8%3D HTTP/1.1
+2016-01-13 11:57:05,393 PST DEBUG headers - >> GET /73d5ee7f8fe31ffdc7818bf7aeedea3faf82bd16?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1452715124&Signature=gM5I86fSg9rffb6xb8IZAJyczjA%3D HTTP/1.1
+2016-01-13 11:57:05,393 PST DEBUG headers - >> Host: com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com
+2016-01-13 11:57:05,393 PST DEBUG headers - >> Host: com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com
+2016-01-13 11:57:05,393 PST DEBUG headers - >> Connection: Keep-Alive
+2016-01-13 11:57:05,393 PST DEBUG headers - >> Connection: Keep-Alive
+2016-01-13 11:57:05,393 PST DEBUG headers - >> User-Agent: JetS3t/0.9.4 (Mac OS X/10.9.5; x86_64; en; JVM 1.8.0_05)
+2016-01-13 11:57:05,394 PST DEBUG headers - >> User-Agent: JetS3t/0.9.4 (Mac OS X/10.9.5; x86_64; en; JVM 1.8.0_05)
+2016-01-13 11:57:05,446 PST DEBUG DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+2016-01-13 11:57:05,446 PST DEBUG DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+2016-01-13 11:57:05,446 PST DEBUG headers - << HTTP/1.1 200 OK
+2016-01-13 11:57:05,446 PST DEBUG headers - << HTTP/1.1 200 OK
+2016-01-13 11:57:05,446 PST DEBUG headers - << x-amz-id-2: liwsvAXyGSMKdhD59O1+NgTA2X1iNdtOW4LYWboKyfLcaNu1e9KR18tAzq8kpVfp4XQQ2JZ4nU4=
+2016-01-13 11:57:05,446 PST DEBUG headers - << x-amz-id-2: zxVM5EF+WbHzV0KpewqkonvFbRVBRSCUU7jjWvXZOvWo7biMppGRbiOEoEFkWLbYa2Wrxj/eukA=
+2016-01-13 11:57:05,446 PST DEBUG headers - << x-amz-request-id: 11B96CD3BEA38ABB
+2016-01-13 11:57:05,446 PST DEBUG headers - << Date: Wed, 13 Jan 2016 19:57:06 GMT
+2016-01-13 11:57:05,446 PST DEBUG headers - << x-amz-request-id: 9F21030B8C1988E9
+2016-01-13 11:57:05,446 PST DEBUG headers - << Content-Encoding: gzip
+2016-01-13 11:57:05,446 PST DEBUG headers - << Date: Wed, 13 Jan 2016 19:57:06 GMT
+2016-01-13 11:57:05,446 PST DEBUG headers - << x-amz-meta-domino-original-blob-length: 43902
+2016-01-13 11:57:05,447 PST DEBUG headers - << Content-Encoding: gzip
+2016-01-13 11:57:05,447 PST DEBUG headers - << Last-Modified: Wed, 13 Jan 2016 19:56:48 GMT
+2016-01-13 11:57:05,447 PST DEBUG headers - << x-amz-meta-domino-original-blob-length: 722
+2016-01-13 11:57:05,447 PST DEBUG headers - << ETag: "1e2418eb3a49a660d02ad884ff240cd6"
+2016-01-13 11:57:05,447 PST DEBUG headers - << Last-Modified: Wed, 13 Jan 2016 19:56:48 GMT
+2016-01-13 11:57:05,447 PST DEBUG headers - << x-amz-server-side-encryption: AES256
+2016-01-13 11:57:05,447 PST DEBUG headers - << ETag: "7a9988a5c98f92dea9fce26a625ffb8a"
+2016-01-13 11:57:05,447 PST DEBUG headers - << Accept-Ranges: bytes
+2016-01-13 11:57:05,447 PST DEBUG headers - << x-amz-server-side-encryption: AES256
+2016-01-13 11:57:05,447 PST DEBUG headers - << Content-Type: application/x-gzip
+2016-01-13 11:57:05,447 PST DEBUG headers - << Accept-Ranges: bytes
+2016-01-13 11:57:05,447 PST DEBUG headers - << Content-Length: 8132
+2016-01-13 11:57:05,448 PST DEBUG headers - << Content-Type: application/x-gzip
+2016-01-13 11:57:05,448 PST DEBUG headers - << Server: AmazonS3
+2016-01-13 11:57:05,448 PST DEBUG headers - << Content-Length: 466
+2016-01-13 11:57:05,448 PST DEBUG headers - << Server: AmazonS3
+2016-01-13 11:57:05,450 PST DEBUG DefaultHttpClient - Connection can be kept alive indefinitely
+2016-01-13 11:57:05,450 PST DEBUG DefaultHttpClient - Connection can be kept alive indefinitely
+2016-01-13 11:57:05,457 PST DEBUG RestStorageService - Response for 'GET'. Content-Type: application/x-gzip, Headers: [x-amz-id-2: liwsvAXyGSMKdhD59O1+NgTA2X1iNdtOW4LYWboKyfLcaNu1e9KR18tAzq8kpVfp4XQQ2JZ4nU4=, x-amz-request-id: 11B96CD3BEA38ABB, Date: Wed, 13 Jan 2016 19:57:06 GMT, Content-Encoding: gzip, x-amz-meta-domino-original-blob-length: 43902, Last-Modified: Wed, 13 Jan 2016 19:56:48 GMT, ETag: "1e2418eb3a49a660d02ad884ff240cd6", x-amz-server-side-encryption: AES256, Accept-Ranges: bytes, Content-Type: application/x-gzip, Content-Length: 8132, Server: AmazonS3]
+2016-01-13 11:57:05,457 PST DEBUG RestStorageService - Response for 'GET'. Content-Type: application/x-gzip, Headers: [x-amz-id-2: zxVM5EF+WbHzV0KpewqkonvFbRVBRSCUU7jjWvXZOvWo7biMppGRbiOEoEFkWLbYa2Wrxj/eukA=, x-amz-request-id: 9F21030B8C1988E9, Date: Wed, 13 Jan 2016 19:57:06 GMT, Content-Encoding: gzip, x-amz-meta-domino-original-blob-length: 722, Last-Modified: Wed, 13 Jan 2016 19:56:48 GMT, ETag: "7a9988a5c98f92dea9fce26a625ffb8a", x-amz-server-side-encryption: AES256, Accept-Ranges: bytes, Content-Type: application/x-gzip, Content-Length: 466, Server: AmazonS3]
+2016-01-13 11:57:05,457 PST DEBUG RestStorageService - Response entity: org.apache.http.conn.BasicManagedEntity@1e8e1c08
+2016-01-13 11:57:05,457 PST DEBUG RestStorageService - Response entity: org.apache.http.conn.BasicManagedEntity@4a5d72c7
+2016-01-13 11:57:05,457 PST DEBUG RestStorageService - Entity length: 466
+2016-01-13 11:57:05,457 PST DEBUG RestStorageService - Entity length: 8132
+2016-01-13 11:57:05,457 PST DEBUG RestStorageService - Received response code 200; matches one of expected set ([200])? true
+2016-01-13 11:57:05,457 PST DEBUG RestStorageService - Received response code 200; matches one of expected set ([200])? true
+2016-01-13 11:57:05,459 PST DEBUG ServiceUtils - Processing REST metadata items
+2016-01-13 11:57:05,459 PST DEBUG ServiceUtils - Processing REST metadata items
+2016-01-13 11:57:05,459 PST DEBUG ServiceUtils - Ignoring metadata item: Server=AmazonS3
+2016-01-13 11:57:05,460 PST DEBUG ServiceUtils - Removed user metadata header prefix x-amz-meta- from key: x-amz-meta-domino-original-blob-length=>domino-original-blob-length
+2016-01-13 11:57:05,460 PST DEBUG ServiceUtils - Parsing date string 'Wed, 13 Jan 2016 19:56:48 GMT' into Date object for key: Last-Modified
+2016-01-13 11:57:05,459 PST DEBUG ServiceUtils - Ignoring metadata item: Server=AmazonS3
+2016-01-13 11:57:05,460 PST DEBUG ServiceUtils - Removed user metadata header prefix x-amz-meta- from key: x-amz-meta-domino-original-blob-length=>domino-original-blob-length
+2016-01-13 11:57:05,460 PST DEBUG ServiceUtils - Parsing date string 'Wed, 13 Jan 2016 19:56:48 GMT' into Date object for key: Last-Modified
+2016-01-13 11:57:05,461 PST DEBUG ServiceUtils - Leaving header item unchanged: Last-Modified=Wed Jan 13 11:56:48 PST 2016
+2016-01-13 11:57:05,461 PST DEBUG ServiceUtils - Removed header prefix x-amz- from key: x-amz-server-side-encryption=>server-side-encryption
+2016-01-13 11:57:05,461 PST DEBUG ServiceUtils - Parsing date string 'Wed, 13 Jan 2016 19:57:06 GMT' into Date object for key: Date
+2016-01-13 11:57:05,461 PST DEBUG ServiceUtils - Leaving header item unchanged: Last-Modified=Wed Jan 13 11:56:48 PST 2016
+2016-01-13 11:57:05,461 PST DEBUG ServiceUtils - Removed header prefix x-amz- from key: x-amz-server-side-encryption=>server-side-encryption
+2016-01-13 11:57:05,461 PST DEBUG ServiceUtils - Parsing date string 'Wed, 13 Jan 2016 19:57:06 GMT' into Date object for key: Date
+2016-01-13 11:57:05,461 PST DEBUG ServiceUtils - Leaving header item unchanged: Date=Wed Jan 13 11:57:06 PST 2016
+2016-01-13 11:57:05,461 PST DEBUG ServiceUtils - Ignoring metadata item: Accept-Ranges=bytes
+2016-01-13 11:57:05,462 PST DEBUG ServiceUtils - Leaving header item unchanged: ETag="1e2418eb3a49a660d02ad884ff240cd6"
+2016-01-13 11:57:05,462 PST DEBUG ServiceUtils - Leaving header item unchanged: Date=Wed Jan 13 11:57:06 PST 2016
+2016-01-13 11:57:05,462 PST DEBUG ServiceUtils - Leaving HTTP header item unchanged: Content-Encoding=gzip
+2016-01-13 11:57:05,462 PST DEBUG ServiceUtils - Ignoring metadata item: Accept-Ranges=bytes
+2016-01-13 11:57:05,462 PST DEBUG ServiceUtils - Leaving header item unchanged: ETag="7a9988a5c98f92dea9fce26a625ffb8a"
+2016-01-13 11:57:05,462 PST DEBUG ServiceUtils - Removed header prefix x-amz- from key: x-amz-request-id=>request-id
+2016-01-13 11:57:05,462 PST DEBUG ServiceUtils - Leaving HTTP header item unchanged: Content-Encoding=gzip
+2016-01-13 11:57:05,462 PST DEBUG ServiceUtils - Removed header prefix x-amz- from key: x-amz-id-2=>id-2
+2016-01-13 11:57:05,462 PST DEBUG ServiceUtils - Removed header prefix x-amz- from key: x-amz-request-id=>request-id
+2016-01-13 11:57:05,462 PST DEBUG ServiceUtils - Leaving HTTP header item unchanged: Content-Length=8132
+2016-01-13 11:57:05,462 PST DEBUG ServiceUtils - Leaving HTTP header item unchanged: Content-Type=application/x-gzip
+2016-01-13 11:57:05,462 PST DEBUG ServiceUtils - Removed header prefix x-amz- from key: x-amz-id-2=>id-2
+2016-01-13 11:57:05,462 PST DEBUG ServiceUtils - Leaving HTTP header item unchanged: Content-Length=466
+2016-01-13 11:57:05,462 PST DEBUG ServiceUtils - Leaving HTTP header item unchanged: Content-Type=application/x-gzip
+2016-01-13 11:57:05,479 PST DEBUG RestUtils$ThreadSafeConnManager - Released connection is reusable.
+2016-01-13 11:57:05,479 PST DEBUG ConnPoolByRoute - Releasing connection [{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443][null]
+2016-01-13 11:57:05,479 PST DEBUG ConnPoolByRoute - Pooling connection [{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443][null]; keep alive indefinitely
+2016-01-13 11:57:05,479 PST DEBUG ConnPoolByRoute - Notifying no-one, there are no waiting threads
+2016-01-13 11:57:05,479 PST DEBUG HttpMethodReleaseInputStream - Released HttpMethod as its response data stream is closed
+2016-01-13 11:57:05,480 PST DEBUG RestUtils$ThreadSafeConnManager - Released connection is reusable.
+2016-01-13 11:57:05,480 PST DEBUG ConnPoolByRoute - Releasing connection [{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443][null]
+2016-01-13 11:57:05,480 PST DEBUG ConnPoolByRoute - Pooling connection [{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443][null]; keep alive indefinitely
+2016-01-13 11:57:05,480 PST DEBUG ConnPoolByRoute - Notifying no-one, there are no waiting threads
+2016-01-13 11:57:05,480 PST DEBUG HttpMethodReleaseInputStream - Released HttpMethod as its response data stream is closed
+2016-01-13 11:57:05,485 PST TRACE LocalFileDirectory - Starting local data directory processing...
+2016-01-13 11:57:05,486 PST TRACE LocalFileDirectory - Processing update FileUpdate(x Modifying file results/stdout.txt,None)...
+2016-01-13 11:57:05,489 PST TRACE LocalFileDirectory - Processing update FileUpdate(x Modifying file results/stdout.txt,None) complete.
+2016-01-13 11:57:05,489 PST TRACE LocalFileDirectory - Processing update FileUpdate(. File domino.last.dump.rda up to date.,None)...
+2016-01-13 11:57:05,489 PST TRACE LocalFileDirectory - Processing update FileUpdate(. File domino.last.dump.rda up to date.,None) complete.
+2016-01-13 11:57:05,489 PST TRACE LocalFileDirectory - Processing update FileUpdate(. File .dominoignore up to date.,None)...
+2016-01-13 11:57:05,489 PST TRACE LocalFileDirectory - Processing update FileUpdate(. File .dominoignore up to date.,None) complete.
+2016-01-13 11:57:05,489 PST TRACE LocalFileDirectory - Processing update FileUpdate(+ Adding file results/Rplot001.svg,None)...
+2016-01-13 11:57:05,490 PST TRACE LocalFileDirectory - Processing update FileUpdate(+ Adding file results/Rplot001.svg,None) complete.
+2016-01-13 11:57:05,490 PST TRACE LocalFileDirectory - Processing update FileUpdate(. File domino.workspace.RData up to date.,None)...
+2016-01-13 11:57:05,490 PST TRACE LocalFileDirectory - Processing update FileUpdate(. File domino.workspace.RData up to date.,None) complete.
+2016-01-13 11:57:05,490 PST TRACE LocalFileDirectory - Processing update FileUpdate(. File foo.R up to date.,None)...
+2016-01-13 11:57:05,491 PST TRACE LocalFileDirectory - Processing update FileUpdate(. File foo.R up to date.,None) complete.
+2016-01-13 11:57:05,491 PST DEBUG LocalFileDirectory - Local data directory processing complete.
+2016-01-13 11:57:05,492 PST DEBUG FileSyncClient - Local data directory processing complete.
+2016-01-13 11:57:05,492 PST DEBUG FileSyncClient - Clearing local blob directory
+2016-01-13 11:57:05,493 PST DEBUG FileSyncClient - Download complete.
+2016-01-13 11:57:05,495 PST  INFO ProjectControllerProxy - getting git host from https://api.dominoup.com/gitRepoUri/earino/tim_example
+2016-01-13 11:57:05,500 PST DEBUG DefaultTransport - Issuing request to https://api.dominoup.com/gitRepoUri/earino/tim_example with proxy detected as DIRECT (full request = Request(GET,<function2>,<function1>,List(),List((X-Domino-Api-Key,0PY3favaLmTACDZbcDzOsOTtoX9CXz4qlfLsqoEGHkvXKu2RUjFylRwgtB8iFAgn)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+2016-01-13 11:57:05,501 PST DEBUG RestUtils$ThreadSafeConnManager - Shutting down
+2016-01-13 11:57:05,501 PST DEBUG ConnPoolByRoute - Closing connection [{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443][null]
+2016-01-13 11:57:05,502 PST DEBUG DefaultClientConnection - Connection 0.0.0.0:62883<->54.231.176.201:443 closed
+2016-01-13 11:57:05,502 PST DEBUG RestUtils$ThreadSafeConnManager - Shutting down
+2016-01-13 11:57:05,503 PST DEBUG ConnPoolByRoute - Closing connection [{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443][null]
+2016-01-13 11:57:05,503 PST DEBUG DefaultClientConnection - Connection 0.0.0.0:62884<->54.231.176.201:443 closed
+2016-01-13 11:57:05,535 PST DEBUG ProjectControllerProxy - response from server: https://git.dominoup.com/projectrepos/5696/5696aace60b2d5c92aa96483.git
+2016-01-13 11:57:05,535 PST  INFO CLIFileSyncClient - checking whether remote (https://git.dominoup.com/projectrepos/5696/5696aace60b2d5c92aa96483.git) needs to be upgraded to match new desired url (https://git.dominoup.com/projectrepos/5696/5696aace60b2d5c92aa96483.git)
+2016-01-13 11:57:05,536 PST  INFO CLIFileSyncClient - Running in cloud mode, so using AnonymousS3BlobStore
+2016-01-13 11:57:05,549 PST TRACE FileSyncClient - Starting upload...
+2016-01-13 11:57:05,556 PST TRACE FileStructureRepo - Staging structure. Current branch = master, head commit ID = Some(AnyObjectId[c70df24b6db35121c6b04afd45d6f543d7e2d76e]).
+2016-01-13 11:57:05,563 PST DEBUG FileStructureRepo - Staging structure complete. Head advanced to commit ID = Some(AnyObjectId[c70df24b6db35121c6b04afd45d6f543d7e2d76e]).
+2016-01-13 11:57:05,564 PST TRACE FileStructureRepoSynchronizer - Upload starting...
+2016-01-13 11:57:05,566 PST TRACE FileStructureRepoSynchronizer - Asserting repo is safe to operate.  repo state = SAFE, isClean = true, isSafe = true, currentBranch = master.
+2016-01-13 11:57:05,569 PST DEBUG FileStructureRepoSynchronizer - Local paths:
+	domino.workspace.RData -> FileSignature(1452714789000,819,Sha1(f1856081cddf9fa90253623625c9c01c6d558d45))
+	domino.last.dump.rda -> FileSignature(1452714789000,272,Sha1(45134ec97cd1fa4530e97ccff0405028ce458ebb))
+	results/Rplot001.svg -> FileSignature(1452715006000,43902,Sha1(73d5ee7f8fe31ffdc7818bf7aeedea3faf82bd16))
+	results/stdout.txt -> FileSignature(1452715006000,722,Sha1(dfb2fa34890ce1e56f6d30099450e78e11b987f0))
+	.dominoignore -> FileSignature(1448101570000,287,Sha1(a5f5eb83114b9b51af35b87c00dace198c7db58b))
+	foo.R -> FileSignature(1452714984000,57,Sha1(cada7b7bc025afe4a260922d7101af7aa904b2bb))
+2016-01-13 11:57:05,569 PST TRACE FileStructureRepo - Starting fetch: master = Some(AnyObjectId[c70df24b6db35121c6b04afd45d6f543d7e2d76e]), refs/remotes/origin/master = Some(AnyObjectId[c70df24b6db35121c6b04afd45d6f543d7e2d76e]).
+2016-01-13 11:57:05,787 PST TRACE FileStructureRepo - Fetch complete: master = Some(AnyObjectId[c70df24b6db35121c6b04afd45d6f543d7e2d76e]), refs/remotes/origin/master = Some(AnyObjectId[c70df24b6db35121c6b04afd45d6f543d7e2d76e]).
+2016-01-13 11:57:05,787 PST TRACE FileStructureRepo - Fetch result = [No Update]
+2016-01-13 11:57:05,789 PST DEBUG FileStructureRepo - Computing diffs between base = refs/remotes/origin/master (c70df24b6db35121c6b04afd45d6f543d7e2d76e) and target = HEAD (c70df24b6db35121c6b04afd45d6f543d7e2d76e).
+2016-01-13 11:57:05,792 PST DEBUG FileStructureRepo - Updates:
+	. File results/Rplot001.svg up to date.
+	. File domino.last.dump.rda up to date.
+	. File .dominoignore up to date.
+	. File domino.workspace.RData up to date.
+	. File results/stdout.txt up to date.
+	. File foo.R up to date.
+2016-01-13 11:57:05,793 PST TRACE FileStructureRepoSynchronizer - Upload before push starting
+2016-01-13 11:57:05,796 PST TRACE FileStructureRepoSynchronizer - Upload before push complete
+2016-01-13 11:57:05,797 PST TRACE FileStructureRepo - Starting push to origin: local/master = Some(AnyObjectId[c70df24b6db35121c6b04afd45d6f543d7e2d76e]), origin/master = Some(AnyObjectId[c70df24b6db35121c6b04afd45d6f543d7e2d76e]).
+2016-01-13 11:57:06,006 PST DEBUG FileStructureRepo - Push result: [RemoteRefUpdate[remoteName=refs/heads/master, UP_TO_DATE, (null)...c70df24b6db35121c6b04afd45d6f543d7e2d76e, srcRef=refs/heads/master, message=null]]
+2016-01-13 11:57:06,008 PST DEBUG FileStructureRepo - Push to origin complete: local/master = Some(AnyObjectId[c70df24b6db35121c6b04afd45d6f543d7e2d76e]), origin/master = Some(AnyObjectId[c70df24b6db35121c6b04afd45d6f543d7e2d76e]).
+2016-01-13 11:57:06,008 PST DEBUG FileStructureRepoSynchronizer - Upload complete.  Success = true
+2016-01-13 11:57:06,008 PST DEBUG FileSyncClient - Upload complete. Success = true

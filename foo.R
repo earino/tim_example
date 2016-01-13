@@ -1,3 +1,3 @@
-print "I am the sample project"
+print("I am the sample project")
 
 hist(iris$Sepal.Width)
